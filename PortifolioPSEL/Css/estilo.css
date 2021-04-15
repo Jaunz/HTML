@@ -1,0 +1,37 @@
+/*
+* @autor João Victor Teixeira
+*/
+
+/* ========== Layout ========== */
+
+body{
+
+    background-color: #05ADAD;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #222326;
+    font-family: Helvetica, Arial, sans-serif;
+
+}
+
+/* ========== Navigation Bar ========== */
+.navbar{
+
+    background: #FBFBFB;
+    position: absolute;
+    width: 100%;
+    height: 120px;
+    left: 0px;
+    top: 0px;
+
+}
+.img-bar{
+
+    height: 40px;
+	width: 132px;
+	display: block;
+    background: url("images/logoimagem-semfundo1.png");
+    background-size: contain;
+	color: transparent;
+
+}
