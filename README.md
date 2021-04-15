@@ -1,2 +1,2 @@
-# HTML
- Primeiro repositório HTML
+# HTML/CSS
+ Primeiro repositório HTML.
