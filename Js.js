@@ -1,3 +1,7 @@
+/*
+* @autor João Victor Teixeira
+*/
+
 function mostrar(click){
 
     const caixas = document.querySelectorAll('.conhecimentos-conteudos');
