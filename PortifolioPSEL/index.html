@@ -8,52 +8,88 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Title page -->
-    <title>Portifólio</title>
+    <title>Portfólio</title>
     <link rel="icon" href="images\logoimagem-semfundo1.png">
 
     <!-- Css -->
     <link rel="stylesheet" type="text/css" href="Css\estilo.css">
 
+    <!--Js-->
+    <script type="text/javascript" src="js/Js.js"></script>
+
 </head>
 
     <body>
-        <nav class = "navbar">
-                <img src="images\logoimagem-semfundo1.png">
-                <ul align="center">
-                    <li>Sobre você</li>
-                    <li>Conhecimento</li>
-                    <li>Contato</li>
-                </ul>
-        </nav> <!--/navbar-->
+        <header>
+            <div class = "container">
+            <img src="images\logoimagem-semfundo1.png">
+            <nav class = "navbar">
+                    <ul>
+                        <li> <a href="#sobre-voce"> Sobre você</a></li>
+                        <li> <a href="#conhecimento"> Conhecimento</a></li>
+                        <li> <a href="#contato"> Contato</a></li>
+                    </ul>
+            </nav><!--/navbar-->
+            </div><!--container-->
+        </header>
 
-        <article class = "principal">
-            <section class = "sobre-voce">
+        <div class = "principal container">
+            <section id = "sobre-voce" class = "sobre-voce">
                 <h1>Sobre você</h1>
+                <div class = "sobre-conteudo">
                 <img class = "foto" src="images\eu.jpeg">
-                <p align = "justify">
+                <p>
                     Meu foco é principalmente em front-end e redes de computadores, em front-end eu já estou correndo atrás e fazendo alguns cursos para aprimorar meu conhecimento ao máximo, redes ainda não obtive tanto conhecimento, apenas o que aprendi no meu tecnológo.
                     Sou técnico em informática pelo IF – campus Cristalina, onde no mesmo eu fiz meu ensino médio. Atualmente sou um estudando da Universidade Federal de Uberlândia, onde lá eu curso Sistemas de Informação.
                 </p>
-            </section>
+                </div><!--/sobre-conteudo-->
+            </section><!--/sobre-voce-->
 
-            <section class = "conhecimentos">
+            <section id = "conhecimento" class = "conhecimentos">
                 <h1>Conhecimentos</h1>
-            </section>
-
-            <div class = "retangle">
-                <ul>
-                    <li><button>Educação</button>
-                    <p>
-                        2015 – 2018: Ensino medio pelo IF – Goiano campus cristalina.<br>
-                        2019: Ensino superior pela Universidade Federal de Uberlândia, UFU.<br>
+                <div class = "retangle">
+                    <ul>
+                        <li><button class = "ativo educacao" onclick = "mostrar('.educacao')">Educação</button></li>
+                        <li><button class = "habilidades" onclick = "mostrar('.habilidades')">Habilidades</button></li>
+                        <li><button class = "softskills" onclick = "mostrar('.softskills')">Soft Skills</button></li>
+                    </ul>
+                    <div class = "conhecimentos-conteudos educacao">
+                        <p>
+                        > 2015 – 2018: Ensino medio pelo IF – Goiano campus cristalina.<br>
+                        <br>> 2019: Ensino superior pela Universidade Federal de Uberlândia, UFU.<br>
                         Cursando Sistemas de informação.
-                    </p>
-                    </li>
-                    <li><button>Habilidades</button></li>
-                    <li><button>Soft Skills</button></li>
-                </ul>
-            </div>
-        </article> <!--/principal-->
+                        </p>
+                    </div><!--/conhecimentos-conteudos educacao-->
+                    <div class = "conhecimentos-conteudos oculto habilidades">
+                        <p>
+                        > Conhecimento intermediário em html5, css3 e C.<br>
+                        <br>> Iniciando estudos em JavaScript.<br>
+                        </p>
+                    </div><!--/conhecimentos-conteudos habilidades-->
+                    <div class = "conhecimentos-conteudos oculto softskills">
+                        <p>
+                        > Comunicativo. <br>
+                        <br>> Prestativo. <br>
+                        <br>> Trabalho bem em grupo. <br>
+                        <br>> Me adéquo bem aos habientes diferentes.
+                        </p>
+                    </div><!--/conhecimentos-conteudos softskills-->
+                </div> <!--/retangle-->
+            </section><!--/conhecimentos-->
 
+            <section id = "contato" class = "contato">
+                <h1>Contato</h1>
+                <div  class = "cont">
+                <img src="images/agenda 1.png">
+                <ul>
+                    <li>Email: Loremipsumdo@ametconse.com</li>
+                    <li>Telefone: (99) 99999-9999</li>
+                    <li>Linkedin: www.linkedin.com/in/Loremipsumdolor-999999a9/</li>
+                </ul>
+                </div>
+            </section><!--/contato-->
+
+        </div> <!--/principal-->
+        <footer class="rodape">Desenvolvido com <img src="images/heart 1.svg"> por João Victor</footer>
     </body>
 </html>

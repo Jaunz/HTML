@@ -1,48 +1,66 @@
 /*
 * @autor João Victor Teixeira
 */
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 /* ========== Navigation Bar ========== */
-.navbar{
+* , *::before, *::after{
+    box-sizing: border-box;
+}
+header{
 
     background: #FBFBFB;
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    left: 0px;
-    top: 0px;
-
-
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 35px;
-    line-height: 41px;
-    z-index: 1;
 
 }
 
-.navbar > img{
+header .container {
 
-    position: absolute;
+    display: flex;
+    align-items: center;
+
+}
+
+.container{
+
+    max-width: 1280px;
+    width: 100%;
+    margin: auto;
+
+}
+
+.navbar ul li a{
+
+    color: #000000;
+    text-decoration: none;
+}
+
+.navbar{
+
+    text-align: center;
+    width: 100%;
+    height: 120px;
+    font-size: 35px;
+    line-height: 41px;
+
+}
+
+.navbar img{
+
     border: transparent thin solid;
     width: 98px;
     height: 103px;
-    left: 166px;
-    top: 9px;
 
 }
 
-.navbar > ul > li{
+.navbar ul  li{
+
     list-style-type: none;
-    display: inline-block;
-    padding-left: 122px;
+
 }
 
-.navbar > ul{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 45px;
+.navbar ul{
+
+    display: inline-flex;
+    gap: 122px;
 
 }
 
@@ -54,118 +72,178 @@ body{
     font-size: 16px;
     line-height: 1.5;
     color: #222326;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: Roboto, Arial, sans-serif;
 
 }
 
 html, body{
     height: 100%;
+    margin: 0;
 }
 
 .principal{
-    padding: 100px;
+    padding-top: 27px;
+    min-height: 100%;
+    margin-bottom: 100px;
+
 }
 
 .sobre-voce h1{
 
     color: #000000;
-    position: relative;
-    left: 60px;
+    margin-bottom: 21px;
+    margin-top: 0;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 50px;
     line-height: 59px;
+
+}
+
+.sobre-voce .sobre-conteudo{
+
+    display: flex;
 
 }
 
 .sobre-voce p{
-    position: absolute;
-    width: 828px;
-    height: 219px;
-    left: 352px;
-    top: 228px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 25px;
+    margin: 0px;
+    font-size: 35px;
     line-height: 41px;
-
     color: #000000;
+
 }
 
-.conhecimentos{
-    position: absolute;
-    left: 600px;
-    top: 502px;
+.sobre-voce .foto{
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+    border-radius: 50%;
+    height: 177px;
+    width: 185px;
+    margin-right: 29px;
+
+}
+
+.conhecimentos h1{
+
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 700;
     font-size: 50px;
     line-height: 59px;
 
     color: #000000;
 }
 
-.foto{
-    position: absolute;
-    width: 185px;
-    height: 177px;
-    left: 138px;
-    top: 234px;
-    border-radius: 100px;
-}
 .retangle{
-    position: absolute;
-    width: 90%;
-    height: 482px;
-    top: 650px;
 
     background: #036E6E;
     border-radius: 20px;
+    padding: 25px 80px;
+
 }
 
-.retangle > ul > li{
+.retangle ul{
+
+    padding-left: 0;
     list-style-type: none;
-    display: inline-block;
-    padding-left: 200px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 47px;
 
 }
 
-ul > li > button{
-    position: relative;
+.retangle ul li{
+
+    margin: 0;
+
+}
+
+.retangle ul li button{
+
     padding: 10px;
-    left: 121px;
-    top: 25px;
 
     border: 1px solid #06D4D4;
-    border-radius: 4px;
     display: inline-block;
     cursor: pointer;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: 500;
+    font-weight: 700;
     font-size: 35px;
     line-height: 41px;
 
     background: #07FAFA;
     border-radius: 5px;
-}
-ul > li > p{
-    position: absolute;
-    text-align: justify;
-    top: 100px;
-    margin-left: 150px;
 
-    font-family: Roboto;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 30px;
+}
+
+.retangle ul li button.ativo{
+    opacity: 0.6;
+}
+
+.retangle .conhecimentos-conteudos p{
+
+    padding-bottom: 150px;
+    margin: 0;
+    text-align: justify;
+    font-size: 35px;
     line-height: 41px;
 
     color: #FFFFFF;
+}
+
+.retangle .conhecimentos-conteudos.oculto{
+
+    display: none;
+
+}
+
+.contato{
+
+    margin-top: 55px;
+
+}
+
+.contato h1{
+
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 59px;
+    margin-bottom: 21px;
+
+}
+
+.contato ul{
+
+    list-style: none;
+    padding-left: 0;
+    font-size: 35px;
+    line-height: 41px;
+
+}
+
+.contato img{
+    margin-right: 21px;
+}
+
+.contato .cont{
+
+    display: flex;
+
+}
+
+/* ========== Footer ========== */
+.rodape{
+
+    text-align: center;
+    font-size: 25px;
+    padding: 56px 20px;
+
+    background-color: #FFFFFF;
+
+}
+
+.rodape img{
+
+   height: 20px;
+
 }
